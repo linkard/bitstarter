@@ -6,11 +6,11 @@ var buf = new Buffer(256);
 //veamos
 buf=fs.readFileSync('/home/ubuntu/hw3/bitstarter/index.html'); 
 
-console.log(buf.toString('utf-8'));
+//console.log(buf.toString('utf-8'));
 
 app.use(express.logger());
 app.get('/', function(request, response) {
-  response.send('buf.toString('utf-8')');
+  response.send('Hello World!');
 });
 
 var port = process.env.PORT || 5000;
