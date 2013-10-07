@@ -10,7 +10,7 @@ var buf = new Buffer(256);
 
 app.use(express.logger());
 app.get('/', function(request, response) {
-    buf=fs.readFileSync('/home/ubuntu/hw3/bitstarter/index.html');
+    buf=fs.readFileSync('bitstarter/index.html');
     response.send(buf.toString('utf-8'));
 });
 
