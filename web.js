@@ -4,13 +4,14 @@ var fs = require('fs');
 var buf = new Buffer(256);
 
 //veamos
-//buf=fs.readFileSync('/home/ubuntu/hw3/bitstarter/index.html'); 
+// 
 
-//console.log(buf.toString('utf-8'));
+//console.log();
 
 app.use(express.logger());
 app.get('/', function(request, response) {
-  response.send('Hello World!');
+    buf=fs.readFileSync('/home/ubuntu/hw3/bitstarter/index.html');
+    response.send(buf.toString('utf-8'));
 });
 
 var port = process.env.PORT || 5000;
