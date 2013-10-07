@@ -1,10 +1,10 @@
 var express = require('express');
 var app = express();
-var fs = require('fs');
-var buf = new Buffer(256);
+//var fs = require('fs');
+//var buf = new Buffer(256);
 
 //veamos
-buf=fs.readFileSync('/home/ubuntu/hw3/bitstarter/index.html'); 
+//buf=fs.readFileSync('/home/ubuntu/hw3/bitstarter/index.html'); 
 
 //console.log(buf.toString('utf-8'));
 
